@@ -1,5 +1,31 @@
 * {
     padding: 0px;
     margin: 0px;
-    display: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: block;
+}
+
+.card {
+    border: 2px solid black;
 }

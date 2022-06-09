@@ -1,41 +1,27 @@
-// URL OPTION ONE
-
-    // const url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Tequila";
-
-    // fetch(url)
-    // .then(res => res.json())
-    // .then(data => {
-    //     let viewData = data;
-    //     console.log(viewData);
-    //     // console.log(viewData.drinks[0]);
-    // })
-    // .catch(err => console.log(err))
-
-// URL OPTION TWO
-
-    // const url2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007";
-
-    // fetch(url2)
-    // .then(res => res.json())
-    // .then(data => {
-    //     let viewData2 = data;
-    //     console.log(viewData2);
-    //     // console.log(viewData2.drinks[0]);
-    // })
-    // .catch(err => console.log(err))
-
-// URL OPTION THREE
-
-    // const url2 = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=ginger";
-
-    // fetch(url2)
-    // .then(res => res.json())
-    // .then(data => {
-    //     let viewData2 = data;
-    //     console.log(viewData2);
-    //     // console.log(viewData2.drinks[0]);
-    // })
-    // .catch(err => console.log(err))
+// CONST VARIABLES
 
 
-    console.log("test");
+// LET VARIABLES
+
+
+// GRAB DOM ELEMENTS
+
+
+// LOOPS / IF, ELSE STATEMENTS
+
+
+// FUNCTIONS
+
+
+// EVENT LISTENERS
+
+    // when button id = "searchByIngredient" is clicked, open or show dialog box id = "drinkList"
+        // background (main page) changes to become inaccessible
+        // "drinkList" dialog box is displayed with <li>name of cocktail and button id = "recipe"</li>
+        // when button id = "recipe" is clicked, dialog box id = "drinkList" is closed and dialog box id = "recipeCard" opens
+     
+    // when search by drink name button is clicked, open dialog box id = "recipeCard"
+    // when search by name button is clicked, open dialog box id = recipe card
+
+
+
