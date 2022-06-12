@@ -11,9 +11,11 @@
     // })
     // .catch(err => console.log(err))
 
+    // console.log(url);
+
 // URL OPTION TWO
 
-    // const url2 = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007";
+    // const url2 = "https://www.thecocktaildb.com/api/json/v1/1";
 
     // fetch(url2)
     // .then(res => res.json())
@@ -23,6 +25,8 @@
     //     // console.log(viewData2.drinks[0]);
     // })
     // .catch(err => console.log(err))
+
+    //  console.log(url2);
 
 // URL OPTION THREE
 
@@ -40,14 +44,14 @@
 
 // FUNCTIONS
 
-function hideCard() {
-    const recipeCard = document.querySelector(".card");
-    recipeCard.style.display = "none";
-    }
+// function hideCard() {
+//     const recipeCard = document.querySelector(".card");
+//     recipeCard.style.display = "none";
+//     }
 
-    function displayCard() {
-        recipeCard.style.display = "block";
-    }
+//     function displayCard() {
+//         recipeCard.style.display = "block";
+//     }
 
-    const searchButton1 = document.querySelector("#searchByIngredient");
-    searchButton1.addEventListener("click", displayCard);
+//     const searchButton1 = document.querySelector("#searchByIngredient");
+//     searchButton1.addEventListener("click", displayCard);
