@@ -20,14 +20,13 @@
         const section = document.querySelector("section");
         section.innerHTML = "";
         input.value = "";
-
     }
 
     function getData(event) {
-        openModal();
         event.preventDefault();
-        const search = input.value;
-        fetch(url + search)
+        let search = input.value;
+        let encodeSearch = encodeURI(search);
+        fetch(url + encodeSearch)
         .then(res => res.json())
         .then(data => {
             data.drinks.forEach(drink => {

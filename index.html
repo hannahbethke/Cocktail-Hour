@@ -27,15 +27,20 @@
             </form>
 
 </main>
-<modal class = "drink-list" style = "display: none">
-    <section>
+<modal id = "drinkModal" style = "display: none">
+    <section id = "drinkSection">
     </section>
-    <a class = "close" href="#">Close</a>
+    <a id = "closeDrinkList" href="#">Close</a>
+</modal>
+<modal id = "recipeModal" style = "display: none">
+    <section id = "recipeSection">
+    </section>
+    <a id = "closeRecipe" href="#">Close</a>
 </modal>
     <footer>
         <p>Copyright &copy All Rights Reserved TITLE 2022</p>
     </footer>
-    <script src="search_by_ingredient.js"></script>
+    <!-- <script src="search_by_ingredient.js"></script> -->
     <script src="search_by_name.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

@@ -44,7 +44,25 @@ main {
     height: 300px;
 }
 
-.drink-list {
+/* .drink-list {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+} */
+
+h3 {
+    text-align: left;
+}
+
+#drinkModal {
     background-color: white;
     position: fixed;
     display: flex;
@@ -58,24 +76,7 @@ main {
     overflow: auto;
 }
 
-h3 {
-    text-align: left;
-}
-
-.drink-list {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    overflow: auto;
-}
-
-section {
+#drinkSection {
     width: 100vw;
     height: 75vh;
     display: flex;
