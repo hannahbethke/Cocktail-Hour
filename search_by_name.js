@@ -13,6 +13,7 @@
     const recipeSection2 = document.querySelector("#recipeSection");
     const closeRecipeModal2 = document.querySelector("#closeRecipeModal");
 
+
     // FUNCTIONS 
 
     function openDrinkModal() {
@@ -35,71 +36,111 @@
         input2.value = "";
     }
 
-    function getRecipe(event) {
+    function getRecipe(drink) {
+        openRecipeModal();
+        let ingredients = [
+            drink.strIngredient1, 
+            drink.strIngredient2,
+            drink.strIngredient3,
+            drink.strIngredient4,
+            drink.strIngredient5,
+            drink.strIngredient6,
+            drink.strIngredient7,
+            drink.strIngredient8,
+            drink.strIngredient9, 
+            drink.strIngredient10,
+            drink.strIngredient11,
+            drink.strIngredient12,
+            drink.strIngredient13,
+            drink.strIngredient14,
+            drink.strIngredient15,
+        ];
+
+        let filteredIngredients = ingredients.filter(ingredient => {
+            return ingredient !== null && ingredient !== "";
+            });
+
+        let measurements = [
+            drink.strMeasure1, 
+            drink.strMeasure2,
+            drink.strMeasure3,
+            drink.strMeasure4,
+            drink.strMeasure5,
+            drink.strMeasure6,
+            drink.strMeasure7,
+            drink.strMeasure8,
+            drink.strMeasure9, 
+            drink.strMeasure10,
+            drink.strMeasure11,
+            drink.strMeasure12,
+            drink.strMeasure13,
+            drink.strMeasure14,
+            drink.strMeasure15,
+        ];
+
+        let filteredMeasurements = measurements.filter(measurement => {
+            return measurement !== null && measurement !== "";
+            });
+
+        let listItems = "";
+        for (let i = 0; i < filteredIngredients.length; i++) {
+            listItems += `<li>${filteredMeasurements[i]} ${filteredIngredients[i]}</li>`
+        }
+
+        recipeSection2.innerHTML +=
+            `<div class="card" style="width: 30rem; height: 30rem"">
+                <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
+                <div class="card-body">
+                    <h1 class="card-text">${drink.strDrink}</h1>
+                    <p>Ingredients:<br>
+                        <ul>
+                            ${listItems}
+                        </ul>
+                    <p>Glassware: ${drink.strGlass}<p>
+                    <p>Directions: ${drink.strInstructions}</p>
+                </div>
+            </div>`;
+    }
+
+    function getDrinkData(event) {
         event.preventDefault();
-        let searchRecipe = input2.value;
-        let encodeSearchRecipe = encodeURI(searchRecipe);
-        fetch(url2 + encodeSearchRecipe)
+        let search2 = input2.value;
+        let encodeSearch2 = encodeURI(search2);
+        fetch(url2 + encodeSearch2)
         .then(res => res.json())
         .then(data => {
             data.drinks.forEach(drink => {
-                openRecipeModal();
-                recipeSection2.innerHTML +=
-                    `<div class="card" style="width: 30rem; height: 30rem"">
-                        <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
-                        <div class="card-body">
-                            <h1 class="card-text">${drink.strDrink}</h1>
-                            <p>Ingredients:<br>
-                                <ul>
-                                    // <li>${drink.strIngredient1}, ${drink.strMeasure1}</li>
-                                    // <li>${drink.strIngredient2}, ${drink.strMeasure2}</li>
-                                    // <li>${drink.strIngredient3}, ${drink.strMeasure3}</li>
-                                    // <li>${drink.strIngredient4}, ${drink.strMeasure4}</li>
-                                    // <li>${drink.strIngredient5}, ${drink.strMeasure5}</li>
-                                    // <li>${drink.strIngredient6}, ${drink.strMeasure6}</li>
-                                    // <li>${drink.strIngredient7}, ${drink.strMeasure7}</li>
-                                    // <li>${drink.strIngredient8}, ${drink.strMeasure8}</li>
-                                </ul>
-                            <p>Glassware: ${drink.strGlass}<p>
-                            <p>Directions: ${drink.strInstructions}</p>
+                openDrinkModal();
 
-                        </div>
-                    </div>`;
-                 })
+                const drinkCard = document.createElement("div");
+                drinkCard.classList.add("card");
+                drinkCard.style.width = "18rem";
+                drinkCard.innerHTML +=
+                    `<img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">`
+                drinkSection2.appendChild(drinkCard);
+
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+                cardBody.innerHTML = 
+                    `<h1 class="card-text">${drink.strDrink}</h1>`
+                drinkCard.appendChild(cardBody);
+
+                const drinkButton2 = document.createElement("button");
+                drinkButton2.classList.add("recipe-button");
+                drinkButton2.innerText = "Recipe";
+                drinkButton2.addEventListener("click", () => getRecipe(drink));
+                cardBody.appendChild(drinkButton2);
+
+                })
+
+                console.log(data);
             })
         }
 
-    // function getDrinkData(event) {
-    //     event.preventDefault();
-    //     let search2 = input2.value;
-    //     let encodeSearch2 = encodeURI(search2);
-    //     fetch(url2 + encodeSearch2)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         data.drinks.forEach(drink => {
-    //             openDrinkModal();
-    //             drinkSection2.innerHTML +=
-    //             `<div class="card" style="width: 18rem;">
-    //                 <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
-    //                 <div class="card-body">
-    //                     <h1 class="card-text">${drink.strDrink}</h1>
-    //                     <button class="recipe-btn">Recipe</button>
-    //                     <a href="${drink.strVideo}" target="_blank">Watch video</a>
-    //                 </div>
-    //             </div>`;
-    //             })
-    //         })
-    //         .catch(err => console.log(err));
-    //     }
-
-
     // Event Listeners
-    // searchForm2.addEventListener("submit", getDrinkData);
-    // searchButton2.addEventListener("click", getDrinkData);
-    searchForm2.addEventListener("submit", getRecipe);
-    searchButton2.addEventListener("click", getRecipe);
+    searchForm2.addEventListener("submit", getDrinkData);
+    searchButton2.addEventListener("click", getDrinkData);
     closeDrinkModal2.addEventListener("click", closeDrinkModal);
     closeRecipeModal2.addEventListener("click", closeRecipeModal);
 
-
-
+    // <a href="${drink.strVideo}" target="_blank">Watch video</a>

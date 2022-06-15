@@ -38,34 +38,6 @@
 
     }
 
-    // function getRecipe(event) {
-    //     event.preventDefault();
-    //     let searchRecipe = input2.value;
-    //     let encodeSearchRecipe = encodeURI(searchRecipe);
-    //     fetch(url2 + encodeSearchRecipe)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         data.drinks.forEach(drink => {
-               
-    //             // } else {
-    //             //     `<div class="card" style="width: 30rem; height: 30rem"">
-    //             //     <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
-    //             //     <div class="card-body">
-    //             //         <h1 class="card-text">${drink.strDrink}</h1>
-    //             //         <p>Ingredients:<br>
-    //             //             <ul>
-
-    //             //             </ul>
-    //             //         <p>Glassware: ${drink.strGlass}<p>
-    //             //         <p>Directions: ${drink.strInstructions}</p>
-    //             //     </div>
-    //             // </div>`;
-    //             // }
-    //         })
-    //     })
-    //         console.log("test");
-    // }
-
     function getRecipe(drink) {
         openRecipeModal();
         let ingredients = [
