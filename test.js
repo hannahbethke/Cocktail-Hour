@@ -86,3 +86,14 @@ spiritsCloseButton.addEventListener("click", closeSpiritsModal);
         }  
     const rumButton = document.querySelector("#rum");
     rumButton.addEventListener("click", getRumInfo);
+
+    function getBrandyInfo(event) {
+        event.preventDefault();
+        fetch(urlSpirits + "brandy")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.ingredients[0].strDescription)
+        })
+        }  
+    const brandyButton = document.querySelector("#brandy");
+    brandyButton.addEventListener("click", getBrandyInfo);
