@@ -1,150 +1,88 @@
-// SEARCH BY COCKTAIL NAME:
+const urlSpirits = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i="
+const spiritsModal = document.querySelector("#spiritsModal");
 
-    // DOM ELEMENTS
+function closeSpiritsModal() {
+    spiritsModal.style.display = "none";
+}
 
-    const url2 = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-    const input2 = document.querySelector("#inputName");
-    const searchForm2 = document.querySelector("#search-by-name");
-    const searchButton2 = document.querySelector("#searchByName");
-    const drinkModal2 = document.querySelector("#drinkModal");
-    const closeDrinkModal2 = document.querySelector("#closeDrinkModal");
-    const drinkSection2 = document.querySelector("#drinkSection");
-    const closeButton2 = document.querySelector("#closeDrinkModal");
-    const recipeModal2 = document.querySelector("#recipeModal");
-    const recipeSection2 = document.querySelector("#recipeSection");
-    const closeRecipeModal2 = document.querySelector("#closeRecipeModal");
+function getTequilaInfo(event) {
+    event.preventDefault();
+    fetch(urlSpirits + "tequila")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data.ingredients[0].strDescription)
+    })
+  }  
+  const tequilaButton = document.querySelector("#tequila");
+    tequilaButton.addEventListener("click", getTequilaInfo);
 
 
-    // FUNCTIONS 
+// TEST CODE TO BE USED FOR ALL BUTTONS
+function getGinInfo(event) {
+    event.preventDefault();
+    fetch(urlSpirits + "gin")
+    .then(res => res.json())
+    .then(data => {
+        spiritsModal.style.display = "block";
+        let ginInfo = data.ingredients[0].strDescription;
+        ginInfo += `<p>${ginInfo}</p>`
+        console.log(ginInfo)
+        console.log(typeof(ginInfo))
+        const spiritsSection = document.querySelector("#spiritsSection");
+        spiritsSection.innerHTML += `${ginInfo}`;
+        spiritsModal.appendChild(spiritsSection);
+    })
+}  
 
-    function openDrinkModal() {
-        drinkModal2.style.display = "block";
-    }
+const ginButton = document.querySelector("#gin");
+ginButton.addEventListener("click", getGinInfo);
+const spiritsCloseButton = document.querySelector("#closeSpiritsModal");
+spiritsCloseButton.addEventListener("click", closeSpiritsModal);
+// DONE
 
-    function closeDrinkModal() {
-        drinkModal2.style.display = "none";
-        drinkSection2.innerHTML = "";
-        input2.value = "";
-    }
 
-    function openRecipeModal() {
-        recipeModal2.style.display = "block";
-    }
 
-    function closeRecipeModal() {
-        recipeModal2.style.display = "none";
-        recipeSection2.innerHTML = "";
-        input2.value = "";
 
-    }
-
-    function getRecipe(drink) {
-        openRecipeModal();
-        let ingredients = [
-            drink.strIngredient1, 
-            drink.strIngredient2,
-            drink.strIngredient3,
-            drink.strIngredient4,
-            drink.strIngredient5,
-            drink.strIngredient6,
-            drink.strIngredient7,
-            drink.strIngredient8,
-            drink.strIngredient9, 
-            drink.strIngredient10,
-            drink.strIngredient11,
-            drink.strIngredient12,
-            drink.strIngredient13,
-            drink.strIngredient14,
-            drink.strIngredient15,
-        ];
-
-        let filteredIngredients = ingredients.filter(ingredient => {
-            return ingredient !== null;
-            });
-
-        let measurements = [
-            drink.strMeasure1, 
-            drink.strMeasure2,
-            drink.strMeasure3,
-            drink.strMeasure4,
-            drink.strMeasure5,
-            drink.strMeasure6,
-            drink.strMeasure7,
-            drink.strMeasure8,
-            drink.strMeasure9, 
-            drink.strMeasure10,
-            drink.strMeasure11,
-            drink.strMeasure12,
-            drink.strMeasure13,
-            drink.strMeasure14,
-            drink.strMeasure15,
-        ];
-
-        let filteredMeasurements = measurements.filter(measurement => {
-            return measurement !== null;
-            });
-
-        let listItems = "";
-        for (let i = 0; i < filteredIngredients.length; i++) {
-            listItems += `<li>${filteredMeasurements[i]} ${filteredIngredients[i]}</li>`
-        }
-        // if (drink.strVideo !== null) {
-        recipeSection2.innerHTML +=
-            `<div class="card" style="width: 30rem; height: 30rem"">
-                <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
-                <div class="card-body">
-                    <h1 class="card-text">${drink.strDrink}</h1>
-                    <p>Ingredients:<br>
-                        <ul>
-                            ${listItems}
-                        </ul>
-                    <p>Glassware: ${drink.strGlass}<p>
-                    <p>Directions: ${drink.strInstructions}</p>
-                    <a href="${drink.strVideo}" target="_blank">Watch video</a>
-                </div>
-            </div>`;
-    }
-
-    function getDrinkData(event) {
+    function getVodkaInfo(event) {
         event.preventDefault();
-        let search2 = input2.value;
-        let encodeSearch2 = encodeURI(search2);
-        fetch(url2 + encodeSearch2)
+        fetch(urlSpirits + "vodka")
         .then(res => res.json())
         .then(data => {
-            data.drinks.forEach(drink => {
-                openDrinkModal();
+            console.log(data.ingredients[0].strDescription)
+        })
+        }  
+    const vodkaButton = document.querySelector("#vodka");
+    vodkaButton.addEventListener("click", getVodkaInfo);
 
-                const drinkCard = document.createElement("div");
-                drinkCard.classList.add("card");
-                drinkCard.style.width = "18rem";
-                drinkCard.innerHTML +=
-                    `<img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">`
-                drinkSection2.appendChild(drinkCard);
+    function getBourbonInfo(event) {
+        event.preventDefault();
+        fetch(urlSpirits + "bourbon")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.ingredients[0].strDescription)
+        })
+        }  
+    const bourbonButton = document.querySelector("#bourbon");
+    bourbonButton.addEventListener("click", getBourbonInfo);
 
-                const cardBody = document.createElement("div");
-                cardBody.classList.add("card-body");
-                cardBody.innerHTML = 
-                    `<h1 class="card-text">${drink.strDrink}</h1>`
-                drinkCard.appendChild(cardBody);
+    function getWhiskeyInfo(event) {
+        event.preventDefault();
+        fetch(urlSpirits + "whiskey")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.ingredients[0].strDescription)
+        })
+        }  
+    const whiskeyButton = document.querySelector("#whiskey");
+    whiskeyButton.addEventListener("click", getWhiskeyInfo);
 
-                const drinkButton2 = document.createElement("button");
-                drinkButton2.classList.add("recipe-button");
-                drinkButton2.innerText = "Recipe";
-                drinkButton2.addEventListener("click", () => getRecipe(drink));
-                cardBody.appendChild(drinkButton2);
-
-                })
-
-                console.log(data);
-            })
-            .catch(err => console.log(err));
-        }
-
-    // Event Listeners
-    searchForm2.addEventListener("submit", getDrinkData);
-    searchButton2.addEventListener("click", getDrinkData);
-    // searchForm2.addEventListener("submit", getRecipe);
-    // searchButton2.addEventListener("click", getRecipe);
-    closeDrinkModal2.addEventListener("click", closeDrinkModal);
-    closeRecipeModal2.addEventListener("click", closeRecipeModal);
+    function getRumInfo(event) {
+        event.preventDefault();
+        fetch(urlSpirits + "rum")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.ingredients[0].strDescription)
+        })
+        }  
+    const rumButton = document.querySelector("#rum");
+    rumButton.addEventListener("click", getRumInfo);

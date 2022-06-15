@@ -12,9 +12,10 @@
 <body>
     <header>
         <h1>TITLE</h1>
+        <h2>because it's 5 o'clock somewhere...</h2>
     </header>
     <main>
-        <h2>INFO</h2>
+        <h2>Title</h2>
             <h3>Search by Ingredient</h3>
             <form id = "search-by-ingredient">
                 <input type="text" name="inputBar" value="" placeholder="type ingredient name" id="inputIngredient">
@@ -25,8 +26,16 @@
                 <input type="text" name="inputBar" value="" placeholder="type cocktail name" id="inputName">
                 <button id = "searchByName">search</button>
             </form>
-
     </main>
+    <div id = "test">
+        <h3>Care to learn more about the spirits you're drinking?</h3>
+        <button id = "tequila">Tequila</button>
+        <button id = "gin">Gin</button>
+        <button id = "vodka">Vodka</button>
+        <button id = "bourbon">Bourbon</button>
+        <button id = "whiskey">Whiskey</button>
+        <button id = "rum">Rum</button>
+    </div>
     <modal id = "drinkModal" style = "display: none">
         <section id = "drinkSection">
         </section>
@@ -37,12 +46,17 @@
         </section>
         <a id = "closeRecipeModal" href="#">Close</a>
     </modal>
+    <modal id = "spiritsModal" style = "display: none">
+        <section id = "spiritsSection">
+        </section>
+        <a id = "closeSpiritsModal" href="#">Close</a>
+    </modal>
     <footer>
         <p>Copyright &copy All Rights Reserved TITLE 2022</p>
     </footer>
     <script src="search_by_ingredient.js"></script>
     <script src="search_by_name.js"></script>
-        <!-- <script src="test.js"></script> -->
+        <script src="test.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

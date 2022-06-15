@@ -62,7 +62,7 @@ h3 {
     text-align: left;
 }
 
-#drinkModal, #recipeModal {
+#drinkModal, #recipeModal, #spiritsModal {
     background-color: white;
     position: fixed;
     display: flex;
@@ -76,7 +76,7 @@ h3 {
     overflow: auto;
 }
 
-#drinkSection, #recipeSection {
+#drinkSection, #recipeSection, #spiritsSection {
     width: 100vw;
     height: 75vh;
     display: flex;
@@ -85,8 +85,11 @@ h3 {
     justify-content: center;
 }
 
-.recipe-btn {
+/* .recipe-btn {
     display: block;
+} */
+#test {
+    color: white;
 }
 
 .card {
