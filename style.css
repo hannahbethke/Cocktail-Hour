@@ -18,20 +18,36 @@ body {
 header, footer {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
+    padding-left: 30px;
 }
 
 h1 {
+    font-size: 110px;
+    font-weight: bold;
+}
+
+h2 {
+    padding-left: 50px;
+}
+
+h2#main {
+    padding-left: 0px;
+    margin-bottom: 5px;
+}
+
+header {
+    color: whitesmoke;
+    font-family: 'Bad Script', cursive;
     font-size: 75px;
     font-weight: bold;
-
-}
-header {
-    color: white;
 }
 
 footer {
     color: whitesmoke;
     text-align: right;
+    margin-top: auto;
+    padding-right: 30px;
 }
 
 main {
@@ -41,15 +57,26 @@ main {
     justify-content: center;
     border: 2px solid black;
     background-color: white;
-    margin: 85px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+    margin: 55px 85px 85px 85px;
     height: 300px;
     max-width: 600px
 }
 
-h3 {
+h4 {
+    font-family: 'Bad Script', cursive;
     text-align: left;
+    padding-left: 30px;
+    font-size: 30px;
 }
 
+h3 {
+    padding-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+}
 #drinkModal, #recipeModal, #spiritsModal {
     position: fixed;
     display: flex;
@@ -81,12 +108,21 @@ h3 {
     justify-content: center;
 }
 
+button {
+    padding: 5px;;
+}
+
+input {
+    padding: 5px
+}
 #spirits {
     color: white;
 }
 
 #spiritButtons {
+    font-family: 'Arsenal', sans-serif;
     font-size: 20px;
+    padding-left: 30px;
 }
 #spiritButtons:hover {
     font-size: 40px;
