@@ -56,10 +56,11 @@ main {
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    border-radius: 7px;
     background-color: white;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
-    margin: 55px 85px 85px 85px;
+    margin: 55px 85px 85px 105px;
     height: 300px;
     max-width: 600px
 }
@@ -68,6 +69,7 @@ h4 {
     font-family: 'Bad Script', cursive;
     text-align: left;
     padding-left: 30px;
+    margin-bottom: 20px;
     font-size: 30px;
 }
 
@@ -91,13 +93,13 @@ h3 {
 }
 
 #drinkModal, #recipeModal {
-    background-image: url("images/bubbles.jpg");
+    background-image: url("images/Screen Shot 2022-06-16 at 3.57.12 PM.png"); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #spiritsModal {
-    background-color: white;
+background-color: whitesmoke;
 }
 #drinkSection, #recipeSection, #spiritsSection {
     width: 100vw;
@@ -109,9 +111,21 @@ h3 {
 }
 
 button {
-    padding: 5px;;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+a {
+    color: whitesmoke;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 30px;
 }
 
+a#closeSpiritsModal {
+    color: black;
+}
 input {
     padding: 5px
 }
@@ -125,8 +139,8 @@ input {
     padding-left: 30px;
 }
 #spiritButtons:hover {
-    font-size: 40px;
-    transition: 0.7s;
+    font-size: 32px;
+    transition: 0.4s;
 }
 
 .card {

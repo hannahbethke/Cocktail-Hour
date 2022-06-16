@@ -20,6 +20,8 @@ function getTequilaInfo(event) {
     .then(data => {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
         spiritsModal.appendChild(spiritsSection);
     })
     .catch(err => console.log(err));
@@ -36,6 +38,8 @@ function getGinInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
@@ -51,6 +55,8 @@ function getVodkaInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
@@ -66,6 +72,8 @@ function getBourbonInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
@@ -81,6 +89,8 @@ function getWhiskeyInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
@@ -96,6 +106,8 @@ function getRumInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
@@ -111,6 +123,8 @@ function getBrandyInfo(event) {
         spiritsModal.style.display = "block";
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
+        spiritsSection.style.fontSize = "18px";
+        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     })
     .catch(err => console.log(err));
 }  
