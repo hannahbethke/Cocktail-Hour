@@ -6,11 +6,11 @@ A simple web application that allows users to search for cocktail recipes.
 
 - As a user, I should be able to type in a cocktail name and return a recipe with ingredients and instructions.
 
-- As a user, I should be able to search for a cocktail by ingredient name and return a list of cocktails.
+- As a user, I should be able to type in an ingredient and return a list of cocktails containing that ingredient.
 
-    - I should also be able to click on each cocktail name in the list and return a recipe with ingredients and instructions.
+    - I should also be able to click on each cocktail in the list and return a recipe with ingredients and instructions.
 
-- As a user, I would like to see an image associate with each cocktail.
+- As a user, I would like to see an image associated with each cocktail.
 
 
 # Technologies Used
@@ -28,8 +28,6 @@ A simple web application that allows users to search for cocktail recipes.
 
 # Getting Started
 
-add hosted/deployed app url
-
 <!-- [Click here](hosted/deployed app url) to ! -->
 
 [Click here]() to see the deployed app!
@@ -41,3 +39,10 @@ add hosted/deployed app url
 - Add ability for users to save a shopping list for their recipe that can be "checked off" as items are aquired. 
 
 - Add links to search for stores near them where they can purchase ingredients, glassware, or bar tools.
+
+- Add videos associated with each drink
+
+# STILL TO COMPLETE:
+1. finish README.md: change wirefram screenshots, add completed app screenshots, add link to completed/deployed app.
+2. deploy app to Netlify
+
