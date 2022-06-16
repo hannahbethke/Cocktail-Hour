@@ -43,6 +43,7 @@ A simple web application that allows users to search for cocktail recipes.
 - Add videos associated with each drink
 
 # STILL TO COMPLETE:
-1. finish README.md: change wirefram screenshots, add completed app screenshots, add link to completed/deployed app.
-2. deploy app to Netlify
+1. deploy app to Netlify
+2. finish README.md: change wireframe screenshots, add completed app screenshots, add link to completed/deployed app.
+
 

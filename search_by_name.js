@@ -18,7 +18,7 @@ const closeButtonRecipeModal2 = document.querySelector("#closeRecipeModal");
 
 function openDrinkModal() {
     drinkModal2.style.display = "block";
-};
+}
 
 function closeDrinkModal() {
     drinkModal2.style.display = "none";

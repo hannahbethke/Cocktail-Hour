@@ -22,6 +22,7 @@ function getTequilaInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const tequilaButton = document.querySelector("#tequila");
 tequilaButton.addEventListener("click", getTequilaInfo);
@@ -36,6 +37,7 @@ function getGinInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const ginButton = document.querySelector("#gin");
 ginButton.addEventListener("click", getGinInfo);
@@ -50,6 +52,7 @@ function getVodkaInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const vodkaButton = document.querySelector("#vodka");
 vodkaButton.addEventListener("click", getVodkaInfo);
@@ -64,6 +67,7 @@ function getBourbonInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const bourbonButton = document.querySelector("#bourbon");
 bourbonButton.addEventListener("click", getBourbonInfo);
@@ -78,6 +82,7 @@ function getWhiskeyInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const whiskeyButton = document.querySelector("#whiskey");
 whiskeyButton.addEventListener("click", getWhiskeyInfo);
@@ -92,6 +97,7 @@ function getRumInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const rumButton = document.querySelector("#rum");
 rumButton.addEventListener("click", getRumInfo);
@@ -106,6 +112,9 @@ function getBrandyInfo(event) {
         spiritsSection.innerHTML += `${data.ingredients[0].strDescription}`;
         spiritsModal.appendChild(spiritsSection);
     })
+    .catch(err => console.log(err));
 }  
 const brandyButton = document.querySelector("#brandy");
 brandyButton.addEventListener("click", getBrandyInfo);
+
+

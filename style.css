@@ -6,15 +6,16 @@
 }
 
 body {
-    background-image: url("images/background-beverage-black-and-white-bubble-caffeine-carbonated-1568949-pxhere.com.jpg");
+    background-image: url("images/Screen Shot 2022-06-16 at 12.09.32 AM.png");
     background-size: cover;
 	background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 95vh;
     min-width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
-    display: flex;
     display: flex;
     flex-direction: column;
 }
@@ -40,30 +41,16 @@ main {
     justify-content: center;
     border: 2px solid black;
     background-color: white;
-    margin: 150px;
+    margin: 85px;
     height: 300px;
+    max-width: 600px
 }
-
-/* .drink-list {
-    background-color: white;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    overflow: auto;
-} */
 
 h3 {
     text-align: left;
 }
 
 #drinkModal, #recipeModal, #spiritsModal {
-    background-color: white;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -76,6 +63,15 @@ h3 {
     overflow: auto;
 }
 
+#drinkModal, #recipeModal {
+    background-image: url("images/bubbles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#spiritsModal {
+    background-color: white;
+}
 #drinkSection, #recipeSection, #spiritsSection {
     width: 100vw;
     height: 75vh;
@@ -85,11 +81,16 @@ h3 {
     justify-content: center;
 }
 
-/* .recipe-btn {
-    display: block;
-} */
-#test {
+#spirits {
     color: white;
+}
+
+#spiritButtons {
+    font-size: 20px;
+}
+#spiritButtons:hover {
+    font-size: 40px;
+    transition: 0.7s;
 }
 
 .card {
@@ -108,6 +109,7 @@ h3 {
 }
 
 .card-body  {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
