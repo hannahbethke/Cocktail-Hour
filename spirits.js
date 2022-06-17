@@ -1,9 +1,17 @@
-// SPIRITS DATA
+// SPIRITS INFO
 
 const urlSpirits = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i="
 const spiritsModal = document.querySelector("#spiritsModal");
 const spiritsSection = document.querySelector("#spiritsSection");
 const spiritsCloseButton = document.querySelector("#closeSpiritsModal");
+
+function openSpiritsModal(data) {
+    spiritsModal.style.display = "block";
+    spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
+    spiritsSection.style.fontSize = "18px";
+    spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+    spiritsModal.appendChild(spiritsSection);
+}
 
 function closeSpiritsModal() {
     spiritsModal.style.display = "none";
@@ -18,11 +26,7 @@ function getTequilaInfo(event) {
     fetch(urlSpirits + "tequila")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
-        spiritsModal.appendChild(spiritsSection);
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -35,11 +39,7 @@ function getGinInfo(event) {
     fetch(urlSpirits + "gin")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -52,11 +52,7 @@ function getVodkaInfo(event) {
     fetch(urlSpirits + "vodka")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -69,11 +65,7 @@ function getBourbonInfo(event) {
     fetch(urlSpirits + "bourbon")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -86,11 +78,7 @@ function getWhiskeyInfo(event) {
     fetch(urlSpirits + "whiskey")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -103,11 +91,7 @@ function getRumInfo(event) {
     fetch(urlSpirits + "rum")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  
@@ -120,11 +104,7 @@ function getBrandyInfo(event) {
     fetch(urlSpirits + "brandy")
     .then(res => res.json())
     .then(data => {
-        spiritsModal.style.display = "block";
-        spiritsSection.innerHTML += `<p id = "spiritsPTag">${data.ingredients[0].strDescription}</p>`;
-        spiritsModal.appendChild(spiritsSection);
-        spiritsSection.style.fontSize = "18px";
-        spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
+        openSpiritsModal(data);
     })
     .catch(err => console.log(err));
 }  

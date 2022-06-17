@@ -101,7 +101,7 @@ function getRecipe(drink) {
         </div>`;
 }
 
-function getDrinkData(event) {
+function getDrinks(event) {
     event.preventDefault();
     let search = input.value;
     let encodeSearch = encodeURI(search);
@@ -137,8 +137,8 @@ function getDrinkData(event) {
 
 // Event Listeners
 
-searchForm.addEventListener("submit", getDrinkData);
-searchButton.addEventListener("click", getDrinkData);
+searchForm.addEventListener("submit", getDrinks);
+searchButton.addEventListener("click", getDrinks);
 closeButtonDrinkModal.addEventListener("click", closeDrinkModal);
 closeButtonRecipeModal.addEventListener("click", closeRecipeModal);
 
