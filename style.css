@@ -22,24 +22,10 @@ header, footer {
     padding-left: 30px;
 }
 
-h1 {
-    font-size: 110px;
-    font-weight: bold;
-}
-
-h2 {
-    padding-left: 50px;
-}
-
-h2#main {
-    padding-left: 0px;
-    margin-bottom: 5px;
-}
-
 header {
     color: whitesmoke;
     font-family: 'Bad Script', cursive;
-    font-size: 75px;
+    font-size: 55px;
     font-weight: bold;
 }
 
@@ -57,28 +43,52 @@ main {
     justify-content: center;
     border: 2px solid black;
     border-radius: 7px;
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
-    margin: 55px 85px 85px 105px;
-    height: 300px;
+    margin: 45px 85px 55px 105px;
+    padding: 30px;
+    height: 350px;
     max-width: 600px
+}
+
+h1 {
+    font-size: 110px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 30px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+h2#main {
+    font-size: 25px;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 h4 {
     font-family: 'Bad Script', cursive;
+    font-size: 35px;
     text-align: left;
     padding-left: 30px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-weight: bold;
+
 }
 
-h3 {
-    padding-left: 0px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 28px;
-}
 #drinkModal, #recipeModal, #spiritsModal {
     position: fixed;
     display: flex;
@@ -99,8 +109,19 @@ h3 {
 }
 
 #spiritsModal {
-background-color: whitesmoke;
+background-image: url("images/Screen Shot 2022-06-16 at 10.10.37 PM.png");
+background-size: cover;
+background-repeat: no-repeat;
 }
+
+#spiritsPTag {
+    max-width: 800px;
+    background-color: whitesmoke;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
 #drinkSection, #recipeSection, #spiritsSection {
     width: 100vw;
     height: 75vh;
@@ -110,39 +131,10 @@ background-color: whitesmoke;
     justify-content: center;
 }
 
-button {
-    padding: 5px;
-    border-radius: 4px;
-    background-color: lightgray;
+#spiritsSection {
+    justify-content: left;
+    padding-left: 100px;
 }
-a {
-    color: whitesmoke;
-    font-family: 'Arsenal', sans-serif;
-    font-size: 25px;
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-a#closeSpiritsModal {
-    color: black;
-}
-input {
-    padding: 5px
-}
-#spirits {
-    color: white;
-}
-
-#spiritButtons {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
-    padding-left: 30px;
-}
-#spiritButtons:hover {
-    font-size: 32px;
-    transition: 0.4s;
-}
-
 .card {
     border: 2px solid black;
     height: 500px;
@@ -165,3 +157,41 @@ input {
     justify-content: space-evenly;
     font-size: 20px;
 }
+
+button {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+
+input {
+    padding: 5px
+}
+
+a {
+    color: whitesmoke;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+/* a#closeSpiritsModal {
+    color: black;
+} */
+
+#spirits {
+    color: white;
+}
+
+#spiritButtons {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#spiritButtons:hover {
+    font-size: 32px;
+    transition: 0.4s;
+}
+
+
