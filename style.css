@@ -2,37 +2,35 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url("images/main_bkgd.jpeg");
     background-size: cover;
 	background-repeat: no-repeat;
-    min-height: 95vh;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
     min-width: 100vw;
-    display: flex;
-    flex-direction: column;
 }
 
 header, footer {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-left: 30px;
+    padding-left: 60px;
+    font-family: 'Bad Script', cursive;
+    color: whitesmoke;
 }
 
 header {
-    color: whitesmoke;
-    font-family: 'Bad Script', cursive;
-    font-size: 55px;
     font-weight: bold;
 }
 
 footer {
-    color: whitesmoke;
     text-align: right;
-    margin-top: auto;
     padding-right: 30px;
 }
 
@@ -41,27 +39,25 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: whitesmoke;
     border: 2px solid black;
     border-radius: 7px;
-    background-color: whitesmoke;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
     margin: 45px 85px 55px 105px;
     padding: 30px;
     height: 350px;
-    max-width: 600px
+    max-width: 600px;
 }
 
 h1 {
-    font-size: 110px;
-    font-weight: bold;
+    font-size: 100px;
 }
 
 h2 {
     font-size: 35px;
     line-height: 30px;
-    padding-left: 50px;
-    font-weight: bold;
+    padding-left: 60px;
 }
 
 h2#main {
@@ -84,11 +80,24 @@ h4 {
     font-family: 'Bad Script', cursive;
     font-size: 35px;
     text-align: left;
-    padding-left: 30px;
     margin-bottom: 20px;
     font-weight: bold;
-
 }
+
+#spiritsDiv {
+    color: whitesmoke;
+    padding-left: 60px;
+}
+
+#spiritButtons {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
+}
+#spiritButtons:hover {
+    font-size: 32px;
+    transition: 0.4s;
+}
+
 
 #drinkModal, #recipeModal, #spiritsModal {
     position: fixed;
@@ -107,12 +116,16 @@ h4 {
     background-image: url("images/blurr_bar.png"); 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #spiritsModal {
 background-image: url("images/spirits_bkgd.jpg");
 background-size: cover;
 background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
 }
 
 #spiritsPTag {
@@ -137,26 +150,32 @@ background-repeat: no-repeat;
     padding-left: 100px;
 }
 .card {
-    border: 2px solid black;
-    height: 500px;
+    border: 5px solid whitesmoke;
     width: 300px;
+    height: auto;
     margin: 1rem;
 }
 
-.card-img-top{
-    border-bottom: 2px solid black;
-}
-
 .card h1 {
+    font-family: 'Arsenal', sans-serif;
     font-size: 20px;
 }
 
 .card-body  {
-    background-color: white;
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
+    border: 5px solid whitesmoke;
     justify-content: space-evenly;
+    font-family: 'Arsenal', sans-serif;
     font-size: 20px;
+}
+.card-text span {
+    font-size: 25px;
+}
+
+.card-text {
+    /* border: 5px solid whitesmoke; */
 }
 
 button {
@@ -165,34 +184,29 @@ button {
     background-color: lightgray;
 }
 
+#myBtn {
+    bottom: 20px;
+    position: fixed;
+    right: 30px;
+}
+
 input {
     padding: 5px
 }
 
 a {
-    color: whitesmoke;
     font-family: 'Arsenal', sans-serif;
     font-size: 25px;
-    padding-top: 50px;
-    padding-left: 30px;
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke;
+    padding: 18px;
 }
 
 /* a#closeSpiritsModal {
     color: black;
 } */
 
-#spirits {
-    color: white;
-}
 
-#spiritButtons {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
-    padding-left: 30px;
-}
-#spiritButtons:hover {
-    font-size: 32px;
-    transition: 0.4s;
-}
 
 

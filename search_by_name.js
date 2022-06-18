@@ -88,10 +88,10 @@ function getRecipe(drink) {
     };
 
     recipeSection2.innerHTML +=
-        `<div class="card" style="width: 30rem; height: 30rem"">
+        `<div class="card" style="width: 30rem;"">
             <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
             <div class="card-body">
-                <h1 class="card-text">${drink.strDrink}</h1>
+                <h1 class="card-text"><span>${drink.strDrink}<span></h1>
                 <p>Ingredients:<br>
                     <ul>
                         ${listItems}
@@ -122,7 +122,7 @@ function getDrinkData(event) {
             const cardBody = document.createElement("div");
             cardBody.classList.add("card-body");
             cardBody.innerHTML = 
-                `<h1 class="card-text">${drink.strDrink}</h1>`
+                `<h1 class="card-text"><span>${drink.strDrink}</span></h1>`
             drinkCard.appendChild(cardBody);
 
             const drinkButton2 = document.createElement("button");
@@ -133,7 +133,11 @@ function getDrinkData(event) {
 
         })
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+        console.log(err);
+        alert("sorry, no drink found");
+        input2.value = "";
+    })
 }
 
 // Event Listeners
