@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("images/main_background.png");
+    background-image: url("images/main_bkgd.jpeg");
     background-size: cover;
 	background-repeat: no-repeat;
     min-height: 95vh;
@@ -104,13 +104,13 @@ h4 {
 }
 
 #drinkModal, #recipeModal {
-    background-image: url("images/drinks_background.png"); 
+    background-image: url("images/blurr_bar.png"); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #spiritsModal {
-background-image: url("images/spirits_background.png");
+background-image: url("images/spirits_bkgd.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 }
