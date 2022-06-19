@@ -19,18 +19,15 @@ body {
 header, footer {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 80px;
     font-family: 'Bad Script', cursive;
     color: whitesmoke;
 }
 
-header {
-    font-weight: bold;
-}
-
 footer {
     text-align: right;
+    padding-top: 25px;
     padding-right: 30px;
 }
 
@@ -43,28 +40,28 @@ main {
     border: 2px solid black;
     border-radius: 7px;
     font-family: 'Arsenal', sans-serif;
-    font-weight: bold;
-    margin: 45px 85px 55px 115px;
-    padding: 30px;
+    margin: 35px 85px 45px 115px;
+    padding: 35px;
     height: 350px;
     max-width: 600px;
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(255, 109, 80);
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 30px;
-    padding-left: 100px;
+    padding-left: 80px;
 }
 
 h2#main {
     font-size: 25px;
     padding-left: 0px;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
 h3 {
@@ -72,16 +69,26 @@ h3 {
     padding-left: 0px;
     margin-bottom: 15px;
     margin-top: 15px;
-    font-weight: bold;
     text-align: center;
 }
 
 h4 {
     font-family: 'Bad Script', cursive;
-    font-size: 35px;
+    font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
-    font-weight: bold;
+    color: rgb(255, 109, 80);
+}
+
+button {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: lightgray;
+}
+
+input {
+    padding: 5px;
+    border-radius: 4px;
 }
 
 #spiritsDiv {
@@ -95,7 +102,7 @@ h4 {
 }
 
 #spiritButtons:hover {
-    font-size: 32px;
+    font-size: 30px;
     transition: 0.3s;
 }
 
@@ -146,9 +153,8 @@ h4 {
 }
 
 #spiritsSection {
-    justify-content: left;
+    justify-content: center;
     padding-top: 30px;
-    padding-left: 60px;
 }
 .card {
     border: 5px solid whitesmoke;
@@ -174,22 +180,6 @@ h4 {
 
 .card-text span {
     font-size: 25px;
-}
-
-button {
-    padding: 5px;
-    border-radius: 4px;
-    background-color: lightgray;
-}
-
-#myBtn {
-    bottom: 20px;
-    position: fixed;
-    right: 30px;
-}
-
-input {
-    padding: 5px;
 }
 
 a {
