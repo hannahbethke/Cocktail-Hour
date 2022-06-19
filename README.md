@@ -19,31 +19,33 @@ A simple web application that allows users to search for cocktail recipes.
 - CSS3
 - Javascript
 - Bootstrap
+- Google Fonts
 
 # Screenshots
 
-![main browser page](images/screenshots/Screen_Shot_Main_Page.png)
+![main browser page](images/screenshots/wireframe_2.png)
 
-![search elements](images/screenshots/Screen_Shot_Additional_Elements.png)
+![search elements](images/screenshots/wireframe_2.png)
+
+![final browser page](images/screenshots/Cocktail_Hour_Screenshot.png)
 
 # Getting Started
 
 <!-- [Click here](hosted/deployed app url) to ! -->
 
-[Click here]() to see the deployed app!
+[Click here](https://guileless-profiterole-9b97c3.netlify.app) to see the deployed app!
 
 # Future Enhancements
 
-- Add ability for users to save a list of favorite recipes.
+- Add ability for users to save a list of favorite recipes
 
-- Add ability for users to save a shopping list for their recipe that can be "checked off" as items are aquired. 
+- Add ability for users to save a shopping list for their recipe that can be "checked off" as items are acquired
 
-- Add links to search for stores near them where they can purchase ingredients, glassware, or bar tools.
+- Add links to search for stores nearby where they can purchase ingredients, glassware, or bar tools
 
 - Add videos associated with each drink
 
-# STILL TO COMPLETE:
-1. deploy app to Netlify
-2. finish README.md: change wireframe screenshots, add completed app screenshots, add link to completed/deployed app.
+- Optimize app for multiple browser sizes and user types
+
 
 
