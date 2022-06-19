@@ -20,7 +20,7 @@ header, footer {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
-    padding-left: 60px;
+    padding-left: 80px;
     font-family: 'Bad Script', cursive;
     color: whitesmoke;
 }
@@ -44,7 +44,7 @@ main {
     border-radius: 7px;
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
-    margin: 45px 85px 55px 105px;
+    margin: 45px 85px 55px 115px;
     padding: 30px;
     height: 350px;
     max-width: 600px;
@@ -57,7 +57,7 @@ h1 {
 h2 {
     font-size: 35px;
     line-height: 30px;
-    padding-left: 60px;
+    padding-left: 100px;
 }
 
 h2#main {
@@ -86,18 +86,18 @@ h4 {
 
 #spiritsDiv {
     color: whitesmoke;
-    padding-left: 60px;
+    padding-left: 80px;
 }
 
 #spiritButtons {
     font-family: 'Arsenal', sans-serif;
     font-size: 20px;
 }
+
 #spiritButtons:hover {
     font-size: 32px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
-
 
 #drinkModal, #recipeModal, #spiritsModal {
     position: fixed;
@@ -121,11 +121,11 @@ h4 {
 }
 
 #spiritsModal {
-background-image: url("images/spirits_bkgd.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-background-attachment: fixed;
+    background-image: url("images/spirits_bkgd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 #spiritsPTag {
@@ -147,7 +147,8 @@ background-attachment: fixed;
 
 #spiritsSection {
     justify-content: left;
-    padding-left: 100px;
+    padding-top: 30px;
+    padding-left: 60px;
 }
 .card {
     border: 5px solid whitesmoke;
@@ -170,12 +171,9 @@ background-attachment: fixed;
     font-family: 'Arsenal', sans-serif;
     font-size: 20px;
 }
+
 .card-text span {
     font-size: 25px;
-}
-
-.card-text {
-    /* border: 5px solid whitesmoke; */
 }
 
 button {
@@ -191,7 +189,7 @@ button {
 }
 
 input {
-    padding: 5px
+    padding: 5px;
 }
 
 a {
@@ -200,12 +198,8 @@ a {
     font-weight: bold;
     color: black;
     background-color: whitesmoke;
-    padding: 18px;
+    padding: 15px;
 }
-
-/* a#closeSpiritsModal {
-    color: black;
-} */
 
 
 

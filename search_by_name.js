@@ -88,7 +88,7 @@ function getRecipe(drink) {
     };
 
     recipeSection2.innerHTML +=
-        `<div class="card" style="width: 30rem;"">
+        `<div class="card" style="width: 30rem">
             <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
             <div class="card-body">
                 <h1 class="card-text"><span>${drink.strDrink}<span></h1>

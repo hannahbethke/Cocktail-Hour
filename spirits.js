@@ -1,9 +1,9 @@
-// SPIRITS INFO
+// GET SPIRITS INFO:
 
-const urlSpirits = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i="
+const urlSpirits = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=";
 const spiritsModal = document.querySelector("#spiritsModal");
 const spiritsSection = document.querySelector("#spiritsSection");
-const spiritsCloseButton = document.querySelector("#closeSpiritsModal");
+
 
 function openSpiritsModal(data) {
     spiritsModal.style.display = "block";
@@ -11,13 +11,13 @@ function openSpiritsModal(data) {
     spiritsSection.style.fontSize = "18px";
     spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     spiritsModal.appendChild(spiritsSection);
-}
+};
 
 function closeSpiritsModal() {
     spiritsModal.style.display = "none";
     spiritsSection.innerHTML = "";
-}
-
+};
+const spiritsCloseButton = document.querySelector("#closeSpiritsModal");
 spiritsCloseButton.addEventListener("click", closeSpiritsModal);
 
 // TEQUILA
@@ -29,7 +29,7 @@ function getTequilaInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const tequilaButton = document.querySelector("#tequila");
 tequilaButton.addEventListener("click", getTequilaInfo);
 
@@ -42,7 +42,7 @@ function getGinInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const ginButton = document.querySelector("#gin");
 ginButton.addEventListener("click", getGinInfo);
 
@@ -55,7 +55,7 @@ function getVodkaInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const vodkaButton = document.querySelector("#vodka");
 vodkaButton.addEventListener("click", getVodkaInfo);
 
@@ -68,7 +68,7 @@ function getBourbonInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const bourbonButton = document.querySelector("#bourbon");
 bourbonButton.addEventListener("click", getBourbonInfo);
 
@@ -81,7 +81,7 @@ function getWhiskeyInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const whiskeyButton = document.querySelector("#whiskey");
 whiskeyButton.addEventListener("click", getWhiskeyInfo);
 
@@ -94,7 +94,7 @@ function getRumInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const rumButton = document.querySelector("#rum");
 rumButton.addEventListener("click", getRumInfo);
 
@@ -107,7 +107,7 @@ function getBrandyInfo(event) {
         openSpiritsModal(data);
     })
     .catch(err => console.log(err));
-}  
+};
 const brandyButton = document.querySelector("#brandy");
 brandyButton.addEventListener("click", getBrandyInfo);
 
