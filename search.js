@@ -91,6 +91,22 @@ function getRecipe(drink) {
         listItems += `<li>${filteredMeasurements[i]} ${filteredIngredients[i]}</li>`;
     };
 
+    if (drink.strVideo !== null) {
+        recipeSection.innerHTML +=
+        `<div class="card" style="width: 30rem;">
+        <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
+        <div class="card-body">
+            <h1 class="card-text"><span>${drink.strDrink}</span></h1>
+            <p>Ingredients:<br>
+                <ul>
+                    ${listItems}
+                </ul>
+            <p>Glassware: ${drink.strGlass}<p>
+            <p>Directions: ${drink.strInstructions}</p>
+            <a href="${drink.strVideo}" target="_blank">Watch video</a>
+        </div>
+    </div>`;
+    } else {
     recipeSection.innerHTML +=
         `<div class="card" style="width: 30rem;">
             <img class="card-img-top" src="${drink.strDrinkThumb}" alt="Card source">
@@ -104,6 +120,7 @@ function getRecipe(drink) {
                 <p>Directions: ${drink.strInstructions}</p>
             </div>
         </div>`;
+    }
 };
 
 function getDrinkList(drink) {

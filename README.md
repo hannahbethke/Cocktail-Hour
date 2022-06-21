@@ -49,7 +49,6 @@ A simple web application that allows users to search for cocktail recipes.
 
 - Add links to search for stores nearby where they can purchase ingredients, glassware, or bar tools
 
-- Add videos associated with each drink
 
 
 
