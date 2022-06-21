@@ -47,7 +47,6 @@ main {
     padding: 35px;
     height: 375px;
     max-width: 650px;
-    min-width: 400px;
 }
 
 h1 {
@@ -199,11 +198,13 @@ a {
 @media screen and (max-width: 700px) {
    
    body {
+       justify-content: center;
        align-items: center;
    }
     main {
       margin: 10px;
-      padding: 5px;
+      padding: 10px;
+      max-width: 360px;
     }
     header {
         padding: 10px; 
@@ -212,7 +213,8 @@ a {
         padding: 10px;
         text-align: center;
     }
-    h2 {
+    h1, h2, h4 {
+        text-align: center;
         padding: 0px;
     }
     .card-body {
