@@ -27,8 +27,13 @@ A simple web application that allows users to search for cocktail recipes.
 
 ![search elements](images/screenshots/wireframe_2.png)
 
-![final browser page](images/screenshots/Cocktail_Hour_Screenshot.png)
+![final main page](images/screenshots/Cocktail_Hour_Screenshot.png)
 
+![drink list page](images/screenshots/drink_list.png)
+
+![recipe page](images/screenshots/recipe.png)
+
+![spirits info page](images/screenshots/spirits_search.png)
 
 # Getting Started
 
@@ -46,7 +51,6 @@ A simple web application that allows users to search for cocktail recipes.
 
 - Add videos associated with each drink
 
-- Optimize app for multiple browser sizes and user types
 
 
 
