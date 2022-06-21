@@ -16,18 +16,20 @@ body {
     min-width: 100vw;
 }
 
-header, footer {
+header {
     display: flex;
     flex-direction: column;
     padding-top: 35px;
-    padding-left: 80px;
+    padding-left: 70px;
     font-family: 'Bad Script', cursive;
     color: whitesmoke;
 }
 
 footer {
     text-align: right;
-    padding-top: 35px;
+    font-family: 'Bad Script', cursive;
+    color: whitesmoke;
+    padding-top: 15px;
     padding-right: 30px;
 }
 
@@ -40,10 +42,12 @@ main {
     border: 2px solid black;
     border-radius: 7px;
     font-family: 'Arsenal', sans-serif;
-    margin: 35px 85px 45px 115px;
+    font-size: 18px;
+    margin: 45px 65px 45px 115px;
     padding: 35px;
-    height: 350px;
-    max-width: 600px;
+    height: 375px;
+    max-width: 650px;
+    min-width: 400px;
 }
 
 h1 {
@@ -76,7 +80,8 @@ h4 {
     font-family: 'Bad Script', cursive;
     font-size: 30px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     color: rgb(255, 109, 80);
 }
 
@@ -93,17 +98,17 @@ input {
 
 #spiritsDiv {
     color: whitesmoke;
-    padding-left: 80px;
+    padding-left: 70px;
 }
 
 #spiritButtons {
     font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #spiritButtons:hover {
-    font-size: 30px;
-    transition: 0.3s;
+    font-size: 32px;
+    transition: 0.4s;
 }
 
 #drinkModal, #recipeModal, #spiritsModal {
@@ -191,6 +196,35 @@ a {
     padding: 15px;
 }
 
+@media screen and (max-width: 700px) {
+   
+   body {
+       align-items: center;
+   }
+    main {
+      margin: 10px;
+      padding: 5px;
+    }
+    header {
+        padding: 10px; 
+    }
+    #spiritsDiv {
+        padding: 10px;
+        text-align: center;
+    }
+    h2 {
+        padding: 0px;
+    }
+    .card-body {
+        font-size: 16px;
+    }
+    .card-text span {
+        font-size: 18px;
+    }
+  }
 
-
-
+  @media screen and (max-width: 1027px) {
+      h4 {
+        color: whitesmoke;
+      }
+  }

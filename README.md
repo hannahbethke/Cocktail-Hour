@@ -29,6 +29,7 @@ A simple web application that allows users to search for cocktail recipes.
 
 ![final browser page](images/screenshots/Cocktail_Hour_Screenshot.png)
 
+
 # Getting Started
 
 <!-- [Click here](hosted/deployed app url) to ! -->
