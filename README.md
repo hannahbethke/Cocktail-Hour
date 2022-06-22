@@ -50,6 +50,13 @@ A simple web application that allows users to search for cocktail recipes.
 
 - Add links to search for stores nearby where they can purchase ingredients, glassware, or bar tools
 
+# Developer Enhancements
+
+- Add "back to top" button for each modal
+
+- Make sure app is completely accessible to those with disabilities
+
+- Enhance CSS (button styling and styling of main div on first page)
 
 
 
