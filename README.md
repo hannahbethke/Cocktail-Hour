@@ -20,6 +20,7 @@ A simple web application that allows users to search for cocktail recipes.
 - Javascript
 - Bootstrap
 - Google Fonts
+- Cocktail DB API (https://www.thecocktaildb.com/)
 
 # Screenshots
 
