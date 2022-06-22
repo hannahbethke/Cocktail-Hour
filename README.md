@@ -1,4 +1,4 @@
-# TITLE
+# COCKTAIL HOUR
 
 A simple web application that allows users to search for cocktail recipes.
 
@@ -25,7 +25,7 @@ A simple web application that allows users to search for cocktail recipes.
 
 ![main browser page](images/screenshots/wireframe_2.png)
 
-![search elements](images/screenshots/wireframe_2.png)
+![search elements](images/screenshots/wireframe_1.png)
 
 ![final main page](images/screenshots/Cocktail_Hour_Screenshot.png)
 
