@@ -12,7 +12,6 @@ A simple web application that allows users to search for cocktail recipes.
 
 - As a user, I would like to see an image associated with each cocktail.
 
-
 # Technologies Used
 
 - HTML5
@@ -46,9 +45,9 @@ A simple web application that allows users to search for cocktail recipes.
 
 - Add ability for users to save a list of favorite recipes
 
-- Add ability for users to save a shopping list for their recipe that can be "checked off" as items are acquired
+- Add ability for users to create and save a shopping list for their recipe that can be "checked off" as items are acquired
 
-- Add links to search for stores nearby where they can purchase ingredients, glassware, or bar tools
+- Add abiity to search for stores nearby where the user can purchase ingredients, glassware, or bar tools
 
 # Developer Enhancements
 
@@ -56,7 +55,7 @@ A simple web application that allows users to search for cocktail recipes.
 
 - Make sure app is completely accessible to those with disabilities
 
-- Enhance CSS (button styling and styling of main div on first page)
+- Enhance CSS (button styling and styling of home page)
 
 
 
