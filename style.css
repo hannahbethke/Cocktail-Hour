@@ -25,14 +25,6 @@ header {
     color: whitesmoke;
 }
 
-footer {
-    text-align: right;
-    font-family: 'Bad Script', cursive;
-    color: whitesmoke;
-    margin-top: auto;
-    padding: 15px 30px 30px 0px;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -49,6 +41,14 @@ main {
     max-width: 650px;
 }
 
+footer {
+    text-align: right;
+    font-family: 'Bad Script', cursive;
+    color: whitesmoke;
+    margin-top: auto;
+    padding: 15px 30px 30px 0px;
+}
+
 h1 {
     font-size: 80px;
     font-weight: bold;
@@ -61,6 +61,7 @@ h2 {
     padding-left: 80px;
 }
 
+/* what does this do- space is missing btwn h2 and #main, ?? */
 h2#main {
     font-size: 25px;
     padding-left: 0px;
@@ -93,6 +94,15 @@ button {
 input {
     padding: 5px;
     border-radius: 4px;
+}
+
+a {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke;
+    padding: 15px;
 }
 
 #spiritsDiv {
@@ -160,6 +170,7 @@ input {
     justify-content: center;
     padding-top: 30px;
 }
+
 .card {
     border: 5px solid whitesmoke;
     width: 300px;
@@ -186,25 +197,16 @@ input {
     font-size: 25px;
 }
 
-a {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    background-color: whitesmoke;
-    padding: 15px;
-}
-
 @media screen and (max-width: 700px) {
    
    body {
-       justify-content: center;
-       align-items: center;
+        justify-content: center;
+        align-items: center;
    }
     main {
-      margin: 10px;
-      padding: 15px;
-      min-width: 359px;
+        margin: 10px;
+        padding: 15px;
+        min-width: 359px;
     }
     header {
         padding: 10px;

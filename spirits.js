@@ -1,9 +1,7 @@
 // GET SPIRITS INFO:
-
 const urlSpirits = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=";
 const spiritsModal = document.querySelector("#spiritsModal");
 const spiritsSection = document.querySelector("#spiritsSection");
-
 
 function openSpiritsModal(data) {
     spiritsModal.style.display = "block";
@@ -12,7 +10,6 @@ function openSpiritsModal(data) {
     spiritsSection.style.fontFamily = "'Arsenal', sans-serif";
     spiritsModal.appendChild(spiritsSection);
 };
-
 function closeSpiritsModal() {
     spiritsModal.style.display = "none";
     spiritsSection.innerHTML = "";
