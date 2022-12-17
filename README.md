@@ -31,8 +31,6 @@ A simple web application that allows users to search for cocktail recipes.
 
 ![drink list page](images/screenshots/drink_list.png)
 
-![recipe page](images/screenshots/recipe.png)
-
 ![spirits info page](images/screenshots/spirits_search.png)
 
 # Getting Started
@@ -51,7 +49,9 @@ A simple web application that allows users to search for cocktail recipes.
 
 # Developer Enhancements
 
-- Add "back to top" button for each modal
+- Known issue with API- "search by ingredient" only returns drinks that have the ingredient in the name of the cocktail (based on structure of API). API will allow you to search by ingredients, but it only returns id, name, and image- no recipie. Need to add additional filters or search paramaters to the API or create a button on each drink returned by "search by ingredient" query that will link to the receipe for that drink.
+
+- Add "back to top" button for drink modal
 
 - Make sure app is completely accessible to those with disabilities
 
